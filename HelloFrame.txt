@@ -1,0 +1,19 @@
+import java.awt.*;
+public class HelloFrame
+	{
+		public static void main(String args[])
+			{
+				Frame f = new Frame("Hello Frame");
+				Label l = new Label("Hello this is a frame");
+				Panel toppanel = new Panel();
+				Panel Bottompanel = new Panel();
+				toppanel.add(l);
+				bottompanel.add(new Button("Button 1"));
+				bottompanel.add(new Button("Button 2"));
+				bottompanel.add(new Button("Button 3"));
+				f.add(toppanel,BorderLayout.NORTH);
+				f.add(Bottompanel,BorderLayout.SOUTH);
+				f.setSize(400,500);
+				f.setVisible(true);
+			}
+	}
